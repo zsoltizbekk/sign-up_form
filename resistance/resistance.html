@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="logo"> </div>
+        </div>
+        <div id="right">
+            <div id="first_paragraph">This is an application form for the Resistance!</div>
+            <div id="second_paragraph">Ignite the Spark. Light the Fire.</div>
+            <div id="line"></div>
+            <form onsubmit="return validateForm(this)">
+                <div>
+                    <label for="first_name">First Name *:</label>
+                    <input type="text" id="first_name" placeholder="Rey" style="width: 120px;" >
+                </div>
+                <div>
+                    <label for="second_name">Second Name:</label>
+                    <input type="text" id="second_name" placeholder="Skywalker" style="width: 120px;"><br>
+                </div>
+                <div>
+                    <label for="identicator">ID *:</label>
+                    <input type="text" id="identicator" placeholder="RS-715-MFP" style="width: 85px;" pattern="[a-zA-Z]{2}-[0-9]{3}-[a-zA-Z]{3}" required>
+                </div>
+                <div>
+                    <label for="height">Height *:</label>
+                    <input type="number" id="height" placeholder="170" style="padding-right: 30px; text-align: right; width: 50px;" ><span class="units" style="margin-left: -30px;">cm</span>
+                </div>
+                <div>
+                    <label for="mass">Mass *:</label>
+                    <input type="number" id="mass" placeholder="54" style="padding-right: 30px; text-align: right; width: 50px;" ><span class="units" style="margin-left: -30px;">kg</span><br>
+                </div>
+                <div>
+                    <label for="passwd">Password *:</label>
+                    <input type="password" id="passwd" minlength="5" maxlength="10" style="width:120px"><span id="passwdmessage"></span><br>
+                </div>
+                <div>
+                    <label for="confpasswd">Confirm password *:</label>
+                    <input type="password" id="confpasswd" minlength="5" maxlength="10" style="width:120px"><span id="passwdconfmessage"></span>
+                </div>
+                <div id="buttons">
+                    <input class="btn" type="submit" value="Submit">
+                    <input onclick="window.location='../index.html';" type="button" class="btn" value="Changed my mind!">
+                </div>
+            </form>
+        
+        </div>   
+    </div> 
+</body>
+</html>

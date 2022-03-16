@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'starwars';
+    src: url('font.ttf');
+}
+
+:root{
+    /*background-color: rgba(253,242,229,255);*/
+    font-family: starwars, Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(20,37,63,255) 0%, rgba(240,230,209,255) 50%);
+    --resistance-opacity : 1;
+    --first-order-opacity: 1;
+}
+#first {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    height: 450px;
+    align-self: center;
+    
+}
+
+img {
+    width: 25vw;
+}
+img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+}

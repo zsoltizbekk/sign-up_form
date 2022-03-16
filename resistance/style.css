@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'starwars';
+    src: url('font.ttf');
+}
+
+:root {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(59,57,61,255);
+    font-family: starwars, Arial, Helvetica, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+input,button{
+    font-family: starwars, Arial, Helvetica, sans-serif;
+}
+
+input {
+    background-color: rgba(240,230,209,255);
+    border: none;
+    border-radius: 1px;
+    height: 1.25rem;
+}
+
+input:focus {
+    outline-color:rgba(151,51,41,255);
+}
+
+#passwdmessage,#passwdconfmessage {
+    color:rgba(151,51,41,255);
+    font-size: 1rem;
+}
+
+#buttons{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display:inline-flex;
+    align-items:flex-end;
+    line-height: 0px;
+    border: none;
+    color: rgba(59,57,61,255);
+    background-color: rgba(240,230,209,255);
+    padding: clamp(1rem, 0.2857rem + 3.2653vw, 2.5rem);
+    font-size: clamp(1.5rem, 0.2857rem + 3.2653vw, 2rem);
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: rgba(59,57,61,255);
+    color: rgba(240,230,209,255);
+    border: 1px solid rgba(151,51,41,255);
+    cursor:pointer;
+}
+
+.btn:active{
+    color: rgba(240,230,209,255);
+    background-color: rgba(151,51,41,255);
+}
+
+label{
+    font-size: 1.25rem;
+}
+#line {
+    background: transparent;
+    background-image: url(logo.png);
+    background-repeat: space space;
+    background-size: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 60vw;
+    height: 30px;
+
+}
+
+.units {
+    color: rgba(59,57,61,255);
+    font-size: 1rem;
+}
+
+#left {
+    background-image: url("photo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+
+    flex: 1;
+    min-width: 200px;
+    height: 100vh;
+}
+
+#right {
+    color: rgba(240,230,209,255);
+    flex:auto;
+
+    max-width: 60vw;
+    font-size: 2rem;
+    height: 100vh;
+    gap: 50px;
+}
+#first_paragraph{
+    font-size: clamp(1.25rem, 0.2857rem + 3.2653vw, 2.25rem);
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    margin-bottom: 20px;   
+}
+
+#second_paragraph{
+    font-size: clamp(0.75rem, -0.875rem + 8.333vw, 1.25rem);
+}
